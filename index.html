@@ -3,60 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chilufya Mwape - Portfolio</title>
-    <link rel="stylesheet" href="./assests/index.css">
+    <meta name="description" content="Chilufya Mwape's portfolio showcasing web development and security expertise.">
+    <title>Chilufya Mwape | Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- Navigation and Banner Section -->
+    <header class="banner">
+        <nav class="navbar">
             <div class="logo">Chilufya Mwape</div>
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#cv">Download CV</a></li>
+                <li><a href="#contact">Download CV</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Need a robust web solution or security expertise? I offer both: Build with confidence, secure with trust.</h1>
-            <a href="#projects" class="cta-button">My Projects</a>
+
+        <div class="main-message">
+            <h1>Need a robust web solution or security expertise?</h1>
+            <p>I offer both: Build with confidence, secure with trust.</p>
+            <a href="#projects" class="btn">My Projects</a>
         </div>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <!-- Project cards will be added here -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A web app that solves X problem with Y technology.</p>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#cv">Download CV</a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <p>Ready to work with us? Get in touch.</p>
-                <p>Phone: 0975 66 53 99 / 0950250444</p>
+            <div class="card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>An automated solution for greenhouse management.</p>
             </div>
-            <div class="social-links">
-                <div class="contact">
-                    <p>Ready to work with us? Get in touch.</p>
-                    <p>Phone: 0975 66 53 99 / 0950250444</p>
-                </div>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <div class="card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>An information security tool to protect Z systems.</p>
             </div>
         </div>
-        <p>&copy; 2023 Chilufya Mwape. All rights reserved.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Download CV</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <p>Ready to work with us? Get in touch.</p>
+            <p>0975 66 53 99 / 0950250444</p>
+        </div>
+        <div class="social-links">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+        </div>
     </footer>
 
-    <script src="./assests/index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
