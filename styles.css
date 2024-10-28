@@ -85,24 +85,76 @@ body {
     position: relative;
 }
 
+
+.projects-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #003a63;
+}
+
+/* Horizontal Scrolling Wrapper */
+.project-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+/* Horizontal Scrolling Cards */
 .project-cards {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    gap: 1rem;
+    animation: scroll 20s linear infinite;
+}
+
+.project-cards:hover {
+    animation-play-state: paused;
+}
+
+.card {
+    width: 300px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card h3 {
-    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #003a63;
 }
 
 .card p {
-    margin: 0.5rem 0;
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #555;
 }
+
+/* Animation for Horizontal Scrolling */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 /* Footer */
 .footer {
